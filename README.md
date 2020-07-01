@@ -2,7 +2,7 @@
 
 The architecture of FaasSim is as follows:
 
-![FaasSim architecture][images/architecture.jpg]
+![FaasSim architecture][/images/architecture.jpg]
 
 To run the simulator first compile the code:
 
