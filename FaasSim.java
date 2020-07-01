@@ -503,7 +503,7 @@ public class FaasSim {
 		while (serviceCompletionCount + totalRequestDrop < numberOfSamples + numberOfSamplesToBeDiscarded) {
 
 			if (arrivalTime == serviceCompletionTime) {
-				
+
 				System.out.println("Warning: Assumption doesn't hold! Will restart current iteration.");
 
 				return -1;
@@ -924,6 +924,7 @@ public class FaasSim {
 
 		double zipfParameter, arrivalRate, spaceToFunctionRatio;
 		int iterStart;
+		int iterationLimit;
 
 		String expectedHitrate;
 		String experimentFolder, parameterRootDir;
@@ -934,7 +935,6 @@ public class FaasSim {
 
 		numberOfSamples = 10000000;
 		int numberOfCpus;
-		int iterationLimit = 11;
 
 		if (args.length == 0) {
 			numberOfFunctions = 64;
@@ -942,7 +942,8 @@ public class FaasSim {
 			zipfParameter = 0.6;
 			expectedHitrate = "cocoa";
 			numberOfCpus = 2;
-			iterStart = 11;
+			iterStart = 1;
+			iterationLimit = 1;
 
 		} else {
 
@@ -952,7 +953,7 @@ public class FaasSim {
 			expectedHitrate = args[3];
 			numberOfCpus = Integer.parseInt(args[4]);
 			iterStart = Integer.parseInt(args[5]);
-
+			iterationLimit = Integer.parseInt(args[6]);
 		}
 
 		for (int iter = iterStart; iter <= iterationLimit; iter++) {
