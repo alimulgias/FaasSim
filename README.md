@@ -4,7 +4,7 @@ FaasSim is an event-driven simulator for a FaaS platform. The architecture of Fa
 
 ![](./images/architecture.png)
 
-Here, the functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. In FaasSim, the requests arrive at a rate \lambda and each of the functions *f*<sub>i</sub> has a probability *p*<sub>i</sub> of being invoked for service. If a function is more popular than its *p*<sub>i</sub> will be higher. Each of the functions has its own service times.
+Here, the functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. In FaasSim, the requests arrive at a rate \alpha and each of the functions *f*<sub>i</sub> has a probability *p*<sub>i</sub> of being invoked for service. If a function is more popular than its *p*<sub>i</sub> will be higher. Each of the functions has its own service times.
 
 To run the simulator first compile the code:
 
