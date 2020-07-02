@@ -3,6 +3,7 @@
 FaasSim is an event-driven simulator for a FaaS platform. It simulates the platform with ![formula](https://render.githubusercontent.com/render/math?math=N) number of functions. Since it is not suggested as a [best practice](https://www.ibm.com/cloud/learn/faas#toc-principles-JNV0JBYp), the simulator doesn't consider a function calling another function. The architecture of FaasSim is as follows:
 
 ![](./images/architecture.png)
+
 For this demonstration, we have chosen an open workload model where requests arrives following a Poisson process with a moderate arrival rate of 0.5. To introduce popularity among the functions, we have used the Zipf parameter \cite{newman2005power} with a commonly used value of 1.0. 
 
 FaasSim follows an open workload model. The requests arrive following a Poisson process at a rate ![formula](https://render.githubusercontent.com/render/math?math=\lambda). The functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. To introduce this popularity among the functions, we have used the [Zipf parameter](https://en.wikipedia.org/wiki/Zipf%27s_law). Each function has its own service times, cold start times, idle times and memory consumption values. A sample set of parameters is provided in the experiment folder.
