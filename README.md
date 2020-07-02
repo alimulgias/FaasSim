@@ -14,7 +14,7 @@ Next run the code as follows:
 
     java -Xms6144m -Xmx8192m FaasSim 64 0.5 0.6 cocoa 2 1 5
 
-We need to pass the VM arguments to allocate the required amount of memory. The values are high as by default COCOA collects large number of samples (10<sup>7</sup>) and stores different traces corresponding to these samples in the memory to make the simulation faster.
+We need to pass the VM arguments to allocate the required amount of memory. The values are high as by default FaasSim collects large number of samples (10<sup>7</sup>) and stores different traces corresponding to these samples in the memory to make the simulation faster.
 
 The arguments for the simulator are: **numberOfFunctions arrivalRate zipfShape expectedHitRate numberOfCpus iterationStartIndex iterationEndIndex**
     
