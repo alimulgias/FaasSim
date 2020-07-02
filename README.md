@@ -16,6 +16,6 @@ Next run the code as follows:
 
 We need to pass the JVM parameters for the memroy. The values are high as by default COCOA collects large number of samples 10<sup>7</sup> and stores different traces corresponding to these samples in the memory to make the simulation faster.
 
-The arguments for the application are <numberOfFunctions> <arrivalRate> <zipfShape> <expectedHitRate> <numberOfCpus> <iterationStartIndex> <iterationEndIndex>
+The arguments for the application are: **numberOfFunctions arrivalRate zipfShape expectedHitRate numberOfCpus iterationStartIndex iterationEndIndex**
     
 FaasSim looks for the service times, cold start times and idle times in the folder corresponding to the arguments passed. For example, for the above run command it will look for the service times and cold start times in the experiment/64/0.5/0/6 folder. And for the idle times it will look at experiment/64/0.5/0/6/idleTimes/cocoa folder.
