@@ -20,7 +20,7 @@ We need to pass the VM arguments (Xms and Xmx) to allocate the required amount o
 The arguments for the main program are: *numberOfFunctions arrivalRate zipfShape expectedHitRate numberOfCpus iterationStartIndex iterationEndIndex*
     
 FaasSim looks for the service times, cold start times, idle times and the memory consumption values in the folder corresponding to the arguments passed. For the above run command,
-it will look for the service times, cold start times and memory consumption values in the folder *experiment/params/64/0.5/0/6*. And for the idle times it will look at the folder *experiment/params/64/0.5/0.6/idleTimes/cocoa*.
+it will look for the service times, cold start times and memory consumption values in the folder *experiment/params/64/0.5/0.6*. And for the idle times it will look at the folder *experiment/params/64/0.5/0.6/idleTimes/cocoa*.
 
 The outputs are provided in the *experiment* folder. It creates four result folders inside the epxeriment folder. These are *cpu*, *logs*, *mem*, *response*. Inside each of those folders, a folder is created corresponding to the arguments passed like *64/0.5/0.6/cocoa*. Inside this folder, there can be multiple folders depending on the number iterations. 
 
