@@ -4,7 +4,7 @@
 
 ![](./images/architecture.png)
 
-<p align="justify">FaasSim follows an open workload model. The requests arrive following a Poisson process at a rate &lambda. The functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. To introduce this popularity among the functions, we have used the [Zipf parameter](https://en.wikipedia.org/wiki/Zipf%27s_law). Each function has its own service times, cold start times, idle times and memory consumption values. There are two different memory consumption values - one while the function is idle and other when it is in-execution.  A sample set of parameters is provided in the experiment folder.</p>
+<p align="justify">FaasSim follows an open workload model. The requests arrive following a Poisson process at a rate <math>\sqrt{\pi}</math>. The functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. To introduce this popularity among the functions, we have used the [Zipf parameter](https://en.wikipedia.org/wiki/Zipf%27s_law). Each function has its own service times, cold start times, idle times and memory consumption values. There are two different memory consumption values - one while the function is idle and other when it is in-execution.  A sample set of parameters is provided in the experiment folder.</p>
 
 To run the simulator first compile the code:
 
