@@ -1,8 +1,8 @@
 # Function-as-a-service Simulator (FaasSim)
 
-<p align="justify" markdown="1">FaasSim is an event-driven simulator for a FaaS platform. It simulates the platform with <img src="https://render.githubusercontent.com/render/math?math=N"> number of functions. Since it is not suggested as a <a href="https://www.ibm.com/cloud/learn/faas#toc-principles-JNV0JBYp">best practice</a>, the simulator doesn't consider a function calling another function. The architecture of FaasSim is as follows: </p>
+<p align="justify">FaasSim is an event-driven simulator for a FaaS platform. It simulates the platform with <img src="https://render.githubusercontent.com/render/math?math=N"> number of functions. Since it is not suggested as a <a href="https://www.ibm.com/cloud/learn/faas#toc-principles-JNV0JBYp">best practice</a>, the simulator doesn't consider a function calling another function. The architecture of FaasSim is as follows: </p>
 
-<p align="center"><img src="./images/architecture.png" alt="Architecture of FaasSim" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
+<p align="center"><img src="./images/architecture.png" alt="Architecture of FaasSim"></p>
 
 ![](./images/architecture.png)
 
