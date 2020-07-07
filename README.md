@@ -2,9 +2,11 @@
 
 <p align="justify" markdown="1">FaasSim is an event-driven simulator for a FaaS platform. It simulates the platform with <img src="https://render.githubusercontent.com/render/math?math=N"> number of functions. Since it is not suggested as a <a href="https://www.ibm.com/cloud/learn/faas#toc-principles-JNV0JBYp">best practice</a>, the simulator doesn't consider a function calling another function. The architecture of FaasSim is as follows: </p>
 
+<img src="./images/architecture.png" alt="Architecture of FaasSim" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+
 ![](./images/architecture.png)
 
-<p align="justify">FaasSim follows an open workload model. The requests arrive following a Poisson process at a rate <img src="https://render.githubusercontent.com/render/math?math=\lambda">. The functions are ordered in terms of their popularity. That is, the first function has the most and the *n*<sup>th</sup> function has the least probability of being called for service. To introduce this popularity among the functions, we have used the <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf parameter</a>. Each function has its own service times, cold start times, idle times and memory consumption values. There are two different memory consumption values - one while the function is idle and other when it is in-execution.  A sample set of parameters is provided in the experiment folder.</p>
+<p align="justify">FaasSim follows an open workload model. The requests arrive following a Poisson process at a rate <img src="https://render.githubusercontent.com/render/math?math=\lambda">. The functions are ordered in terms of their popularity. That is, the first function has the most and the <img src="https://render.githubusercontent.com/render/math?math=n^{\text{th}}"> function has the least probability of being called for service. To introduce this popularity among the functions, we have used the <a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Zipf parameter</a>. Each function has its own service times, cold start times, idle times and memory consumption values. There are two different memory consumption values - one while the function is idle and other when it is in-execution.  A sample set of parameters is provided in the experiment folder.</p>
 
 To run the simulator first compile the code:
 
